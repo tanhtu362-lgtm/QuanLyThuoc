@@ -1,0 +1,42 @@
+Patient
+Đại diện cho bệnh nhân
+patientId
+fullName
+dateOfBirth
+phone
+-------------------------------------------------------
+Medication
+Đại diện cho một loại thuốc
+medicationId
+name
+unit
+expiryDate
+stockQuantity
+---------------------------------------------------------
+PrescriptionItem
+Một loại thuốc nằm trong đơn thuốc
+- medication
+- quantity
+- dosageInstructions
+- frequency: Tính thường xuyên
+- durationDays: Thời lượng một ngày
+
+----------------------------------------------------------
+MedicationLog
+Ghi nhận việc dùng thuốc
+
+- prescriptionItem
+- scheduledTime
+- takenAt
+- status
+
+[x] 1. Java OOP và mô hình dữ liệu — Patient, Medication, Prescription, PrescriptionItem
+[ ] 2. PrescriptionManager và Java Collections — Thêm, liệt kê, tìm kiếm, kiểm tra dữ liệu
+[ ] 3. Exception handling và hoàn thiện Java Core — Xử lý lỗi, kiểm tra đầu vào
+[ ] 4. SQL và MySQL — Thiết kế bảng, khóa và truy vấn
+[ ] 5. JDBC — Kết nối Java với MySQL
+[ ] 6. HTTP, JSON và REST API — Thiết kế các endpoint
+[ ] 7. Spring Boot — Controller, Service, Repository
+[ ] 8. JPA/Hibernate và validation — Lưu dữ liệu và xử lý nghiệp vụ
+[ ] 9. Security và testing — Đăng nhập, phân quyền, kiểm thử
+[ ] 10. Git, Docker và triển khai — Hoàn thiện sản phẩm và tài liệu
